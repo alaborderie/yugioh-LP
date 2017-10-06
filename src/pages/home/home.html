@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar color="dark">
     <ion-title text-center>
-      Yu Gi Oh! Lp Counter
+      YuGiOh!Counter
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -39,12 +39,12 @@
       <ion-row>
         <ion-col>
           <div text-center>
-            <button ion-button color="grey" (click)="changeLP()" [disabled]="!this.selectedPlayer">BOOM! ({{sign}} for {{damage}})</button>
+            <button ion-button color="grey" (click)="changeLP()" [disabled]="!this.selectedPlayer">{{sign}} for {{damage}}</button>
           </div>
         </ion-col>
         <ion-col>
           <div text-center>
-            <button ion-button color="grey" (click)="resetDMG()">Reset damage/heal value</button>
+            <button ion-button color="grey" (click)="resetDMG()" [disabled]="this.damage == 0">Reset selected value</button>
             </div>
         </ion-col>
       </ion-row>
