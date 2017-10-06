@@ -58,4 +58,8 @@ export class HomePage {
     this.Joueur2 = new Joueur(this.Joueur2.name, 2);
   }
 
+  resetDMG(): void {
+    this.damage = 0;
+  }
+
 }

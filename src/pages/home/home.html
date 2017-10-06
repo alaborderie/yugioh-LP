@@ -42,6 +42,11 @@
             <button ion-button color="grey" (click)="changeLP()" [disabled]="!this.selectedPlayer">BOOM! ({{sign}} for {{damage}})</button>
           </div>
         </ion-col>
+        <ion-col>
+          <div text-center>
+            <button ion-button color="grey" (click)="resetDMG()">Reset damage/heal value</button>
+            </div>
+        </ion-col>
       </ion-row>
     </ion-grid>
   </ion-card>
